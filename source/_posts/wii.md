@@ -1,5 +1,5 @@
 ---
-title:Wii 4.3J 系统信息炸弹软解完全教程
+title: Wii 4.3J 系统信息炸弹软解完全教程
 date: 2026-04-03 20:18:00
 tags: Wii,破解,游戏,软解
 categories: 教程
