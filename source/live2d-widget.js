@@ -1,4 +1,4 @@
-// 看板娘配置 - 启用手机端显示，使用koharu模型
+// 看板娘配置 - 电脑+手机双端正常显示
 window.live2dSettings = {
   model: {
     use: "https://cdn.jsdelivr.net/npm/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json"
@@ -9,7 +9,10 @@ window.live2dSettings = {
     height: 300
   },
   mobile: {
-    show: true
+    show: true,
+    scale: 0.5,     // 移动端缩放比例，避免太大
+    width: 120,     // 移动端宽度
+    height: 200     // 移动端高度
   },
   react: {
     opacityDefault: 0.7,
