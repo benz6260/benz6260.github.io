@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 小麒资源汇总站
 subtitle: ''
 description: ''
 keywords:
@@ -109,3 +109,19 @@ search:
   field: post
   content: true
   template: template
+
+# Live2D 看板娘
+live2d:
+  enable: true
+  scriptFrom: local
+  modelRoot: live2d-widget-model-koharu/assets/
+  model: koharu
+  display:
+    position: right
+    width: 250
+    height: 300
+  mobile:
+    show: false
+  react:
+    opacityDefault: 0.7
+    opacityOnHover: 1
