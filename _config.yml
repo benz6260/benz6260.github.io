@@ -121,7 +121,7 @@ live2d:
     width: 250
     height: 300
   mobile:
-    show: false
+    show: true
   react:
     opacityDefault: 0.7
     opacityOnHover: 1
