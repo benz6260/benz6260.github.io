@@ -111,19 +111,6 @@ search:
   template: template
 
 # Live2D 看板娘
+# 使用 CDN 方式，配置在 _config.butterfly.yml inject 中
 live2d:
-  enable: true
-  scriptFrom: local
-  pluginRootPath: live2dw/
-  pluginJsPath: lib/
-  pluginModelPath: assets/
-  tagMode: false
-  debug: false
-  model:
-    use: live2d-widget-model-koharu
-  display:
-    position: right
-    width: 150
-    height: 300
-  mobile:
-    show: true
+  enable: false

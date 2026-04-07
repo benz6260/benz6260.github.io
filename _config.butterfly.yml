@@ -810,7 +810,7 @@ preloader:
 enter_transitions: true
 
 # Default display mode - light (default) / dark
-display_mode: light
+display_mode: dark
 
 # Configuration for beautifying the content of the article
 beautify:
@@ -1068,11 +1068,10 @@ custom_css:
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    - <script src="/live2d-widget.js"></script>
   bottom:
     # - <script src="xxxx"></script>
     - <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-   # - <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+    - <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
