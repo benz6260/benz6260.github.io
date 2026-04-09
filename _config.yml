@@ -110,9 +110,9 @@ search:
   content: true
   template: template
 
-# Live2D 看板娘
+# Live2D 看板娘 - 已改用 stevenjoezhang/live2d-widget，这里禁用
 live2d:
-  enable: true
+  enable: false
   scriptFrom: local
   pluginRootPath: live2dw/
   pluginJsPath: lib/
@@ -131,17 +131,3 @@ live2d:
   cdn:
     jsdelivr:
       enabled: false
-  # 开启工具按钮
-  tools:
-    enable: true
-    default:
-      - hitokoto
-      - switch-model
-      - close
-  # 开启欢迎消息
-  message:
-    enable: true
-    welcome: 欢迎来到老板的博客🎉
-  # 开启对话框
-  dialog:
-    enable: true
