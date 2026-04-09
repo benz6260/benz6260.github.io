@@ -1096,11 +1096,6 @@ inject:
             enable: true,
             items: [
               {
-                type: "hitokoto",
-                icon: "🤖",
-                title: "一言"
-              },
-              {
                 type: "close",
                 icon: "❌",
                 title: "关闭"
