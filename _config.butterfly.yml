@@ -1068,11 +1068,56 @@ custom_css:
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    # - <script src="/live2d-widget.js"></script>  <!-- 注释掉，和 hexo-helper-live2d 冲突 -->
   bottom:
     # - <script src="xxxx"></script>
     - <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-    # - <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>  <!-- 注释掉，和 hexo-helper-live2d 冲突 -->
+    - <script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0/dist/live2d.min.js"></script>
+    - |
+      <script>
+        window.addEventListener('load', function() {
+          L2Dwidget.init({
+            model: {
+              jsonPath: "/live2d-widget-model-koharu/assets/koharu.model.json",
+              prefix: "/"
+            },
+            display: {
+              position: "right",
+              width: 150,
+              height: 300
+            },
+            mobile: {
+              show: true
+            },
+            dialog: {
+              enable: true,
+              script: {
+                "welcome": "欢迎来到老板的博客🎉",
+                "message_default": "你好，我是看板娘koharu！"
+              }
+            },
+            tools: {
+              enable: true,
+              items: [
+                {
+                  type: "hitokoto",
+                  icon: "🤖",
+                  title: "一言"
+                },
+                {
+                  type: "switch",
+                  icon: "🔄",
+                  title: "换模型"
+                },
+                {
+                  type: "close",
+                  icon: "❌",
+                  title: "关闭"
+                }
+              ]
+            }
+          });
+        });
+      </script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
