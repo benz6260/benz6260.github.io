@@ -110,9 +110,9 @@ search:
   content: true
   template: template
 
-# Live2D 看板娘 - 已改用 stevenjoezhang/live2d-widget，这里禁用
+# Live2D 看板娘 - hexo-helper-live2d 负责生成本地模型文件，stevenjoezhang 负责显示
 live2d:
-  enable: false
+  enable: true
   scriptFrom: local
   pluginRootPath: live2dw/
   pluginJsPath: lib/
