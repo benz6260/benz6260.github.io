@@ -1073,48 +1073,47 @@ inject:
     - <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     - |
       <script>
-        window.live2d_config = {
-          model: {
-            jsonPath: "/live2d-widget-model-koharu/assets/koharu.model.json"
-          },
-          display: {
-            position: "right",
-            width: 150,
-            height: 300
-          },
-          mobile: {
-            show: true
-          },
-          dialog: {
-            enable: true,
-            script: {
-              "welcome": "欢迎来到老板的博客🎉",
-              "message_default": "你好，我是看板娘koharu！"
-            }
-          },
-          tools: {
-            enable: true,
-            items: [
-              {
-                type: "hitokoto",
-                icon: "🤖",
-                title: "一言"
+        setTimeout(function() {
+          $.getScript('https://cdn.bootcdn.net/ajax/libs/live2d-widget/3.1.4/live2d.min.js', function() {
+            L2Dwidget.init({
+              model: {
+                jsonPath: "/live2d-widget-model-koharu/assets/koharu.model.json",
+                prefix: "/"
               },
-              {
-                type: "switch",
-                icon: "🔄",
-                title: "换模型"
+              display: {
+                position: "right",
+                width: 150,
+                height: 300
               },
-              {
-                type: "close",
-                icon: "❌",
-                title: "关闭"
+              mobile: {
+                show: true
+              },
+              dialog: {
+                enable: true,
+                script: {
+                  "welcome": "欢迎来到老板的博客🎉",
+                  "message_default": "你好，我是看板娘koharu！"
+                }
+              },
+              tools: {
+                enable: true,
+                items: [
+                  {
+                    type: "hitokoto",
+                    icon: "🤖",
+                    title: "一言"
+                  },
+                  {
+                    type: "close",
+                    icon: "❌",
+                    title: "关闭"
+                  }
+                ]
               }
-            ]
-          }
-        };
+            });
+          });
+        }, 1000);
       </script>
-    - <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
