@@ -131,3 +131,17 @@ live2d:
   cdn:
     jsdelivr:
       enabled: false
+  # 开启工具按钮
+  tools:
+    enable: true
+    default:
+      - hitokoto
+      - switch-model
+      - close
+  # 开启欢迎消息
+  message:
+    enable: true
+    welcome: 欢迎来到老板的博客🎉
+  # 开启对话框
+  dialog:
+    enable: true

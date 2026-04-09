@@ -1,4 +1,4 @@
 /* 调整看板娘位置，避免被页脚遮挡 */
 #live2dcanvas {
-  bottom: 50px !important;
+  bottom: 20px !important;
 }
