@@ -29,7 +29,6 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-  - /live2d.json
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -97,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly
+theme: hexo-theme-butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -112,6 +111,23 @@ search:
   template: template
 
 # Live2D 看板娘
-# 使用 CDN 方式，配置在 _config.butterfly.yml inject 中
 live2d:
-  enable: false
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-koharu
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+  # 确保使用本地CDN，避免国内访问GitHub被墙
+  cdn:
+    jsdelivr:
+      enabled: false
