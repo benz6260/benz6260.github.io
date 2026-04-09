@@ -1101,11 +1101,6 @@ inject:
                 title: "一言"
               },
               {
-                type: "switch",
-                icon: "🔄",
-                title: "换模型"
-              },
-              {
                 type: "close",
                 icon: "❌",
                 title: "关闭"
