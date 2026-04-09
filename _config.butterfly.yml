@@ -1073,54 +1073,48 @@ inject:
     - <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     - |
       <script>
-        $(function() {
-          setTimeout(function() {
-            $.getScript('https://cdn.jsdelivr.net/npm/live2d-widget@3.0/dist/live2d.min.js', function() {
-              L2Dwidget.init({
-                model: {
-                  jsonPath: "/live2dw/assets/koharu.model.json",
-                  prefix: "/live2dw/"
-                },
-                display: {
-                  position: "right",
-                  width: 150,
-                  height: 300
-                },
-                mobile: {
-                  show: true
-                },
-                dialog: {
-                  enable: true,
-                  script: {
-                    "welcome": "欢迎来到老板的博客🎉",
-                    "message_default": "你好，我是看板娘koharu！"
-                  }
-                },
-                tools: {
-                  enable: true,
-                  items: [
-                    {
-                      type: "hitokoto",
-                      icon: "🤖",
-                      title: "一言"
-                    },
-                    {
-                      type: "switch",
-                      icon: "🔄",
-                      title: "换模型"
-                    },
-                    {
-                      type: "close",
-                      icon: "❌",
-                      title: "关闭"
-                    }
-                  ]
-                }
-              });
-            });
-          }, 500);
-        });
+        window.live2d_config = {
+          model: {
+            jsonPath: "/live2dw/assets/koharu.model.json"
+          },
+          display: {
+            position: "right",
+            width: 150,
+            height: 300
+          },
+          mobile: {
+            show: true
+          },
+          dialog: {
+            enable: true,
+            script: {
+              "welcome": "欢迎来到老板的博客🎉",
+              "message_default": "你好，我是看板娘koharu！"
+            }
+          },
+          tools: {
+            enable: true,
+            items: [
+              {
+                type: "hitokoto",
+                icon: "🤖",
+                title: "一言"
+              },
+              {
+                type: "switch",
+                icon: "🔄",
+                title: "换模型"
+              },
+              {
+                type: "close",
+                icon: "❌",
+                title: "关闭"
+              }
+            ]
+          }
+        };
       </script>
+    - <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
