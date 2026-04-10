@@ -19,6 +19,7 @@ nav:
 
 menu:
   首页: / || fas fa-home
+  相册: /gallery/ || fas fa-images
   汽车相关: /categories/汽车相关/ || fas fa-car
   电脑相关: /categories/电脑相关/ || fas fa-laptop
   游戏机相关: /categories/游戏机相关/ || fas fa-gamepad
