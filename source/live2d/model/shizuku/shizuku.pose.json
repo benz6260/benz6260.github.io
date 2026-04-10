@@ -1,0 +1,13 @@
+{
+  "formatVersion": "3.0",
+  "poseSetting": {
+    "normal": [
+      {"id": "PARAM_ANGLE_X", "value": 0.0},
+      {"id": "PARAM_ANGLE_Y", "value": 0.0},
+      {"id": "PARAM_BODY_ANGLE_X", "value": 0.0},
+      {"id": "PARAM_EYE_L_OPEN", "value": 1.0},
+      {"id": "PARAM_EYE_R_OPEN", "value": 1.0},
+      {"id": "PARAM_MOUTH_OPEN_Y", "value": 0.0}
+    ]
+  }
+}

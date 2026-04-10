@@ -1,2 +1,12 @@
-/* 看板娘对话框和按钮样式 - autoload.js自带CSS，这里不需要额外定义 */
-/* 位置保持默认，紧贴底部 */
+/* 强制手机端显示看板娘 */
+@media (max-width: 768px) {
+  #live2d-widget {
+    display: block !important;
+    position: fixed !important;
+    z-index: 99999 !important;
+    bottom: 20px !important;
+    right: 10px !important;
+    width: 120px !important;
+    height: 200px !important;
+  }
+}

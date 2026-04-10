@@ -1,0 +1,19 @@
+{
+  "formatVersion": "3.0",
+  "physicsSetting": {
+    "gravity": [0.0, -9.8, 0.0],
+    "wind": [0.0, 0.0, 0.0],
+    "groups": [
+      {
+        "id": "default",
+        "targets": [
+          {"id": "PARAM_ANGLE_X", "angle": 30.0, "weight": 1.0},
+          {"id": "PARAM_ANGLE_Y", "angle": 30.0, "weight": 1.0},
+          {"id": "PARAM_BODY_ANGLE_X", "angle": 15.0, "weight": 0.5},
+          {"id": "PARAM_EYE_L_OPEN", "angle": 5.0, "weight": 0.2},
+          {"id": "PARAM_EYE_R_OPEN", "angle": 5.0, "weight": 0.2}
+        ]
+      }
+    ]
+  }
+}
